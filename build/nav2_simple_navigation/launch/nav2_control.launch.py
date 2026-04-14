@@ -1,0 +1,1 @@
+/home/thehoa/hospital_robot_nav/src/nav2_simple_navigation/launch/nav2_control.launch.py

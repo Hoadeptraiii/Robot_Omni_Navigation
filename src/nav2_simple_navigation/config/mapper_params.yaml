@@ -1,0 +1,10 @@
+slam_toolbox:
+  ros__parameters:
+    use_sim_time: True
+    mode: mapping
+
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_footprint
+    scan_topic: /scan_front_raw
+

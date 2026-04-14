@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+a50eca91acb3a906f62cfbc7da6ac47c CMakeFiles/hospital_robot_uninstall

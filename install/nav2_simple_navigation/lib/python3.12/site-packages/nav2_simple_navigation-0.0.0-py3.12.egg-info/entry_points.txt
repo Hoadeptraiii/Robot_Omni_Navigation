@@ -1,0 +1,5 @@
+[console_scripts]
+bt_nav = nav2_simple_navigation.bt_nav:main
+circle_nav = nav2_simple_navigation.circle_nav:main
+square_nav = nav2_simple_navigation.square_nav:main
+yaw_debugger = nav2_simple_navigation.debug_yaw:main
