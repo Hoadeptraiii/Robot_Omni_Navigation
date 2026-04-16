@@ -23,7 +23,7 @@ def generate_launch_description():
     pkg = get_package_share_directory('hospital_robot')
 
     urdf_file = os.path.join(pkg, 'urdf', 'omni_base.urdf')
-    world_file = os.path.join(pkg, 'worlds','worlds', 'hospital_aws.world')
+    world_file = os.path.join(pkg, 'worlds','worlds', 'hospital_full.world')
     bridge_config = os.path.join(pkg, 'config', 'bridge_config.yaml')
     controller_config = os.path.join(pkg, 'config', 'configuration.yaml')
     pkg_parent_dir = os.path.join(pkg, '..')
@@ -173,7 +173,7 @@ def generate_launch_description():
 
     # --- Sắp xếp thứ tự chạy bằng TimerAction ---
     delayed_spawn = TimerAction(
-        period= 3.0,
+        period= 20.0,
         actions=[spawn_robot]
     )
 

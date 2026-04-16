@@ -32,10 +32,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'square_nav = nav2_simple_navigation.square_nav:main',
-            'circle_nav = nav2_simple_navigation.circle_nav:main',
-            'bt_nav = nav2_simple_navigation.bt_nav:main',
-            'yaw_debugger = nav2_simple_navigation.debug_yaw:main',
+            'go_to_room = nav2_simple_navigation.go_to_room:main',
         ],
     },
 )
