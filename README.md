@@ -76,7 +76,7 @@ Hospital_Robot_Nav/
 ---
 
 ## Sử dụng
-Sửa các đường link tại các file thành đường link của bạn:
+Sửa các đường link tại các file thành đường link của bạn:  
 -Dòng 770 file omni_base.urdf:     <parameters>/home/thehoa/hospital_robot_nav/install/hospital_robot/share/hospital_robot/config/configuration.yaml</parameters>   
 -Sửa dòng đầu của file run_hospital_robot.sh: cd /home/thehoa/hospital_robot_nav  
 Lần lượt chạy các câu lệnh sau để có thể sử dụng mã nguồn:  
