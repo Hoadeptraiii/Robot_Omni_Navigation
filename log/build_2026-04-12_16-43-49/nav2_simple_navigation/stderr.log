@@ -1,1 +1,0 @@
-error: [Errno 17] File exists: '/home/thehoa/hospital_robot_nav/build/nav2_simple_navigation/config/hospital_map.yaml' -> '/home/thehoa/hospital_robot_nav/install/nav2_simple_navigation/share/nav2_simple_navigation/config/hospital_map.yaml'
