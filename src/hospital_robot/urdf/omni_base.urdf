@@ -347,7 +347,7 @@
       <geometry>
         <mesh filename="package://hospital_robot/meshes/base/base_link.stl"/>
       </geometry>
-      <material name="Orange">
+      <material name="Blue">
       </material>
     </visual>
     <collision>

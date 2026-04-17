@@ -21,6 +21,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
 
     pkg = get_package_share_directory('hospital_robot')
+    pkg_nav = get_package_share_directory('nav2_simple_navigation')
 
     urdf_file = os.path.join(pkg, 'urdf', 'omni_base.urdf')
     world_file = os.path.join(pkg, 'worlds','worlds', 'hospital_full.world')
@@ -163,19 +164,15 @@ def generate_launch_description():
     # -------------------------
     # Node ekf
     # -------------------------
-    # robot_localization_node = Node(
-    #     package='robot_localization',
-    #     executable='ekf_node',
-    #     name='ekf_filter_node',
-    #     output='screen',
-    #     parameters=[os.path.join(pkg, 'config/ekf.yaml'), {'use_sim_time': LaunchConfiguration('use_sim_time')}]
-    # )
+    robot_localization_node = Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_filter_node',
+        output='screen',
+        parameters=[os.path.join(pkg_nav, 'config/ekf.yaml'), {'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    )
 
     # --- Sắp xếp thứ tự chạy bằng TimerAction ---
-    delayed_spawn = TimerAction(
-        period= 20.0,
-        actions=[spawn_robot]
-    )
 
     delayed_bridge = TimerAction(
         period=5.0,
@@ -188,6 +185,16 @@ def generate_launch_description():
             joint_state_broadcaster,
             mobile_base_controller
         ]
+    )
+
+    delayed_spawn = TimerAction(
+        period= 20.0,
+        actions=[spawn_robot]
+    )
+
+    delay_ekf = TimerAction(
+        period=25.0,
+        actions=[robot_localization_node]
     )
 
 
@@ -204,5 +211,6 @@ def generate_launch_description():
         delayed_spawn,
         delayed_bridge,
         delayed_controllers,
-        rviz_node,
+        delay_ekf,
+        #rviz_node
     ])

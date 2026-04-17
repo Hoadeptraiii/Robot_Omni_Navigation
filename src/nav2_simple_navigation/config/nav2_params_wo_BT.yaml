@@ -87,7 +87,7 @@ global_costmap:
 
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        inflation_radius: 0.5
+        inflation_radius: 0.55
 
 # -------------------------
 # Local Costmap
@@ -111,7 +111,7 @@ local_costmap:
 
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        inflation_radius: 0.5
+        inflation_radius: 0.7
 
 # -------------------------
 # Recovery Server
