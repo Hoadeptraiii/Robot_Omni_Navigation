@@ -9,6 +9,15 @@ Python 3.12+
 git clone 
 cd Hospital_Robot_Nav
 ## Cấu trúc thư mục
+# 🏥 Hospital Robot Navigation (ROS2)
+
+Dự án mô phỏng robot điều hướng trong bệnh viện sử dụng ROS 2, Gazebo và Nav2.
+
+---
+
+## 📂 Project Structure
+
+```bash
 Hospital_Robot_Nav/
 ├── README.md
 ├── run_ekf.sh
@@ -60,6 +69,38 @@ Hospital_Robot_Nav/
         │   └── tb3_navigation2.rviz
         ├── setup.cfg
         └── setup.py
+```
+
+---
+
+## 🚀 How to Run
+
+```bash
+# Build
+colcon build
+source install/setup.bash
+
+# Run simulation
+./run_hospital_robot.sh
+```
+
+---
+
+## 🧠 Features
+
+* Navigation using Nav2
+* SLAM mapping
+* GUI điều khiển robot
+* EKF localization
+
+---
+
+## 📌 Requirements
+
+* Ubuntu 24.04
+* ROS 2 Jazzy
+* Gazebo Harmonic
+
 ## Sử dụng
 Sửa các đường link tại các file thành đường link của bạn:
 -Dòng 770 file omni_base.urdf: <parameters>/home/thehoa/hospital_robot_nav/install/hospital_robot/share/hospital_robot/config/configuration.yaml</parameters> 
