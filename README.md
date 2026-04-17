@@ -1,4 +1,4 @@
-# Hospital Robot Navigation (ROS2 Jazzy)
+#  🏥 Hospital Robot Navigation (ROS2 Jazzy)
 Dự án điều hướng robot thông minh trong bệnh viện, chạy trên nền tảng Ubuntu 24.04 và ROS 2 Jazzy Jalisco. Hệ thống cho phép robot di chuyển chính xác đến các phòng bệnh thông qua tọa độ định sẵn.
 ## Yêu cầu hệ thống
 HĐH: Ubuntu 24.04 LTS
@@ -9,10 +9,6 @@ Python 3.12+
 git clone 
 cd Hospital_Robot_Nav
 ## Cấu trúc thư mục
-# 🏥 Hospital Robot Navigation (ROS2)
-
-Dự án mô phỏng robot điều hướng trong bệnh viện sử dụng ROS 2, Gazebo và Nav2.
-
 ---
 
 ## 📂 Project Structure
@@ -72,34 +68,6 @@ Hospital_Robot_Nav/
 ```
 
 ---
-
-## 🚀 How to Run
-
-```bash
-# Build
-colcon build
-source install/setup.bash
-
-# Run simulation
-./run_hospital_robot.sh
-```
-
----
-
-## 🧠 Features
-
-* Navigation using Nav2
-* SLAM mapping
-* GUI điều khiển robot
-* EKF localization
-
----
-
-## 📌 Requirements
-
-* Ubuntu 24.04
-* ROS 2 Jazzy
-* Gazebo Harmonic
 
 ## Sử dụng
 Sửa các đường link tại các file thành đường link của bạn:
