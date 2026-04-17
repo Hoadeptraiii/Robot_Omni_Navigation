@@ -9,54 +9,54 @@ Python 3.12+
 git clone 
 cd Hospital_Robot_Nav
 ## Cấu trúc thư mục
-Hospital_Robot_Nav
+Hospital_Robot_Nav/
 ├── README.md
 ├── run_ekf.sh
 ├── run_hospital_robot.sh
 ├── run_slam.sh
 ├── save_map.sh
-└── src
-    ├── hospital_robot
+└── src/
+    ├── hospital_robot/
     │   ├── CMakeLists.txt
-    │   ├── config
+    │   ├── config/
     │   │   ├── bridge_config.yaml
     │   │   └── configuration.yaml
-    │   ├── launch
+    │   ├── launch/
     │   │   ├── display.launch.py
     │   │   └── gazebo_control.launch.py
     │   ├── package.xml
-    │   ├── scripts
-    │   ├── urdf
+    │   ├── scripts/
+    │   ├── urdf/
     │   │   └── omni_base.urdf
-    │   └── worlds
+    │   └── worlds/
     │       ├── empty.sdf
-    │       ├── models
-    │       └── worlds
-    └── nav2_simple_navigation
+    │       ├── models/
+    │       └── worlds/
+    └── nav2_simple_navigation/
         ├── CMakeLists.txt
-        ├── config
+        ├── config/
         │   ├── ekf.yaml
         │   ├── hospital_map.pgm
         │   ├── hospital_map.yaml
         │   ├── mapper_params.yaml
         │   ├── nav2_hospital_params.yaml
-        │   ├── nav2_params_wo_BT.yaml
         │   ├── nav2_params.yaml
+        │   ├── nav2_params_wo_BT.yaml
         │   ├── navigate_to_pose_w_replanning_and_recovery.xml
         │   └── rooms.yaml
-        ├── launch
+        ├── launch/
         │   ├── ekf.launch.py
         │   ├── go_to_room.launch.py
         │   ├── nav2_control.launch.py
         │   └── navigation2.launch.py
-        ├── nav2_simple_navigation
+        ├── nav2_simple_navigation/
         │   ├── __init__.py
         │   ├── map.png
         │   └── navigation_gui.py
         ├── package.xml
-        ├── resource
+        ├── resource/
         │   └── nav2_simple_navigation
-        ├── rviz
+        ├── rviz/
         │   └── tb3_navigation2.rviz
         ├── setup.cfg
         └── setup.py
