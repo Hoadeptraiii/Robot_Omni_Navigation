@@ -14,13 +14,13 @@ ROS 2: Jazzy Jalisco
 Mô phỏng: Gazebo Harmonic / Ignition
 Python 3.12+
 ## Cài đặt
-git clone 
-cd Hospital_Robot_Nav
+git clone https://github.com/Hoadeptraiii/Robot_Omni_Navigation.git   
+cd Robot_Omni_Navigation  
 ## Cấu trúc thư mục
 ---
 
 ```bash
-Hospital_Robot_Nav/
+Robot_Omni_Navigation/
 ├── README.md
 ├── run_ekf.sh
 ├── run_hospital_robot.sh
