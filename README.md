@@ -11,8 +11,6 @@ cd Hospital_Robot_Nav
 ## Cấu trúc thư mục
 ---
 
-## 📂 Project Structure
-
 ```bash
 Hospital_Robot_Nav/
 ├── README.md
